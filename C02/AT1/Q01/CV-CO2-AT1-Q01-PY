@@ -1,0 +1,246 @@
+1. Grey Level Transformation
+(a) Explain the purpose of grey level transformation in image enhancement.
+
+(b) Apply a negative transformation to the pixel values:
+
+Compute the transformed values.
+
+2. Log Transformation
+
+(a) Explain how log transformation enhances low-intensity pixels.
+
+(b) Given , where , compute for:
+
+3. Histogram Processing
+(a) Explain the role of histogram equalization in contrast enhancement.
+(b) Given a 3-bit image with histogram:
+Intensity Frequency
+0 2
+1 2
+2 4
+3 8
+
+Compute the cumulative distribution and equalized intensity values.
+
+4. Spatial Filtering (Smoothing)
+(a) Explain the purpose of spatial filtering for smoothing.
+(b) Apply a 3×3 averaging filter to the following region:
+Compute the new center pixel value.
+
+5. Spatial Filtering (Sharpening)
+(a) Explain how sharpening enhances image details.
+(b) Apply the Laplacian mask:
+
+]
+
+to the matrix:
+Compute the output at the center.
+
+6. Frequency Domain Filtering
+(a) Differentiate low-pass and high-pass filtering in frequency domain.
+
+(b) Given frequency components:
+
+Apply a low-pass filter that retains only the first two components. Write the filtered
+output.
+
+7. Thresholding
+
+(a) Explain global thresholding in segmentation.
+
+(b) Given pixel values:
+
+Apply threshold . Assign values (0 or 1).
+
+8. Edge Detection
+(a) Explain the concept of edge detection.
+(b) Apply the Sobel operator (horizontal):
+to:
+Compute the gradient at the center.
+
+9. Region-Based Segmentation
+
+(a) Explain region growing in segmentation.
+(b) Given pixel intensities:
+
+If seed = 50 and threshold difference = 5, identify pixels belonging to the region.
+
+10. Combined Enhancement &amp; Segmentation
+
+(a) Explain why smoothing is applied before segmentation.
+
+(b) Given image values:
+First apply averaging (assume mean = 48), then threshold at .
+Determine final segmented output.
+
+11. Power-Law (Gamma) Transformation
+A grayscale image is enhanced using power-law transformation.
+(a) Interpret the role of gamma correction in image enhancement.
+(b) Justify the use of transformation , where , .
+(c) Apply the transformation step-by-step to pixel values:
+.
+(d) Compute the transformed values accurately.
+(e) Interpret the results in terms of brightness enhancement.
+
+12. Contrast Stretching
+An image has intensity values in the range [50, 150].
+(a) Interpret the need for contrast stretching.
+(b) Justify linear transformation to range [0, 255].
+(c) Apply transformation step-by-step for values:
+.
+(d) Compute the output values accurately.
+(e) Interpret improvement in contrast.
+
+13. Histogram Equalization (4-bit Image)
+A 4-bit image has the following histogram:
+Intensity Frequency
+
+0 4
+1 6
+2 10
+3 6
+(a) Interpret the need for equalization.
+(b) Justify use of CDF.
+(c) Compute cumulative distribution.
+(d) Compute new intensity levels.
+(e) Interpret contrast enhancement.
+
+14. Median Filtering
+A noisy image contains salt-and-pepper noise.
+(a) Interpret noise characteristics.
+(b) Justify median filter usage.
+(c) Apply filter to:
+(d) Compute center value.
+(e) Interpret noise removal effectiveness.
+
+15. Gaussian Smoothing
+An image is smoothed using Gaussian filter.
+(a) Interpret smoothing objective.
+(b) Justify Gaussian filter over averaging.
+(c) Apply filter:
+to matrix:
+[]
+(d) Compute center pixel.
+(e) Interpret smoothing effect.
+
+16. High-Pass Filtering
+An image requires sharpening.
+(a) Interpret need for high-pass filtering.
+(b) Justify filter selection.
+(c) Apply mask:
+]
+(d) Compute center value.
+
+(e) Interpret edge enhancement.
+
+17. Frequency Domain High-Pass
+Given frequency components:
+(a) Interpret high-frequency importance.
+(b) Justify high-pass filtering.
+(c) Apply filtering (remove low frequencies).
+(d) Compute output.
+(e) Interpret result.
+
+18. Adaptive Thresholding
+Pixel values: [60, 80, 120, 140]
+(a) Interpret segmentation challenge.
+(b) Justify adaptive thresholding.
+(c) Apply local threshold (mean = 100).
+(d) Compute binary output.
+(e) Interpret result.
+
+19. Edge Detection (Vertical Sobel)
+Apply vertical Sobel:
+Matrix:
+(a) Interpret edge detection objective.
+(b) Justify operator choice.
+(c) Apply step-by-step.
+(d) Compute center value.
+(e) Interpret edge direction.
+
+20. Prewitt Edge Detection
+(a) Interpret Prewitt operator purpose.
+(b) Justify use over Sobel.
+(c) Apply kernel:
+[]
+(d) Compute output.
+
+(e) Interpret result.
+
+21. Region Splitting
+Pixel set: [40, 45, 100, 105]
+(a) Interpret segmentation problem.
+(b) Justify splitting method.
+(c) Apply threshold 80.
+(d) Compute regions.
+(e) Interpret separation.
+
+22. Region Merging
+Regions: [45, 50], [52, 55]
+(a) Interpret merging criteria.
+(b) Justify merging approach.
+(c) Apply threshold = 5.
+(d) Compute merged region.
+(e) Interpret result.
+
+23. Edge Linking
+Edges detected: [1, 0, 1, 0, 1]
+(a) Interpret problem of discontinuity.
+(b) Justify linking method.
+(c) Apply linking step.
+(d) Compute result.
+(e) Interpret continuity.
+
+24. Low-Pass Filtering (Frequency)
+Given
+(a) Interpret smoothing requirement.
+(b) Justify LPF selection.
+(c) Apply filter.
+(d) Compute output.
+(e) Interpret effect.
+
+25. Laplacian Sharpening (Variant)
+Mask:
+
+(a) Interpret sharpening need.
+(b) Justify mask.
+(c) Apply to matrix.
+(d) Compute center.
+(e) Interpret result.
+
+26. Histogram Matching
+(a) Interpret need for matching.
+(b) Justify method.
+(c) Map values [10, 50, 100].
+(d) Compute new values.
+(e) Interpret.
+
+27. Noise Reduction Comparison
+(a) Interpret noise type.
+(b) Compare averaging vs median.
+(c) Apply both.
+(d) Compute outputs.
+(e) Interpret differences.
+
+28. Combined Filtering
+(a) Interpret need for smoothing + sharpening.
+(b) Justify sequence.
+(c) Apply filters stepwise.
+(d) Compute output.
+(e) Interpret improvement.
+
+29. Multi-Threshold Segmentation
+Pixels: [20, 60, 120, 180]
+
+(a) Interpret multi-level segmentation.
+(b) Justify thresholds (50,100).
+(c) Apply segmentation.
+(d) Compute classes.
+(e) Interpret.
+
+30. Boundary Detection
+(a) Interpret boundary extraction.
+(b) Justify method.
+(c) Apply edge + linking.
+(d) Compute result.
+(e) Interpret boundaries.

@@ -1,0 +1,237 @@
+1. Low Contrast Image
+A grayscale image appears dull with very little difference between object and
+background intensities.
+(a) Clearly interpret the scenario and explain the cause of low contrast.
+(b) Identify all key issues affecting image visibility.
+(c) Apply an appropriate enhancement technique to address the problem.
+(d) Justify your choice with logical reasoning.
+(e) Present your explanation in a clear and structured manner.
+2. Uneven Illumination
+An image captured under non-uniform lighting shows bright and dark patches.
+(a) Interpret the scenario and explain the impact of uneven illumination.
+(b) Identify key factors causing intensity variation.
+(c) Apply a suitable enhancement method to normalize illumination.
+(d) Justify your selected approach with reasoning.
+(e) Provide a clear and well-structured explanation.
+3. Salt-and-Pepper Noise
+A scanned document contains salt-and-pepper noise affecting readability.
+(a) Explain the scenario and characteristics of this noise.
+(b) Identify key issues impacting image quality.
+(c) Apply an appropriate filtering technique.
+(d) Justify why this method is more suitable than alternatives.
+(e) Present your response clearly and logically.
+
+4. Blurred Edges
+An image processed for noise removal appears overly smooth, causing edges to
+blur.
+(a) Interpret the scenario and explain why edges are blurred.
+(b) Identify key issues related to smoothing and edge loss.
+(c) Apply an appropriate technique to restore edges.
+(d) Justify your decision with clear reasoning.
+(e) Structure your explanation clearly.
+5. High-Frequency Noise
+A satellite image contains fine-grained noise affecting feature visibility.
+(a) Interpret the scenario and describe high-frequency noise.
+(b) Identify the key issues affecting image clarity.
+(c) Apply an appropriate frequency domain filtering method.
+(d) Justify the choice of filter with reasoning.
+(e) Present your answer in a clear and organized manner.
+6. Object Boundary Detection
+In a medical image, boundaries between tissues need to be clearly identified.
+(a) Interpret the scenario and explain the importance of boundary detection.
+(b) Identify key challenges in detecting boundaries.
+(c) Apply a suitable edge detection method.
+(d) Justify your selection with logical reasoning.
+(e) Present your explanation clearly and systematically.
+7. Simple Segmentation
+An image contains objects clearly distinguishable from the background based on
+intensity.
+(a) Interpret the scenario and explain segmentation requirements.
+(b) Identify key features enabling separation.
+(c) Apply a suitable segmentation technique.
+(d) Justify your decision logically.
+(e) Present your response clearly.
+8. Complex Segmentation
+An image contains multiple regions with overlapping intensity values.
+(a) Interpret the scenario and explain segmentation challenges.
+(b) Identify key issues such as intensity overlap.
+(c) Apply an appropriate advanced segmentation method.
+(d) Justify how the method handles complexity.
+(e) Provide a structured and clear explanation.
+9. Broken Edges
+After applying edge detection, object boundaries appear discontinuous.
+(a) Interpret the scenario and explain why edges are broken.
+(b) Identify key issues affecting boundary continuity.
+(c) Apply a suitable method to improve edge connectivity.
+(d) Justify your approach logically.
+(e) Present your explanation clearly.
+
+10. Combined Requirement
+An industrial inspection system requires noise removal while preserving important
+edges for defect detection.
+(a) Interpret the scenario and define the combined requirement.
+(b) Identify key issues involving noise and edge preservation.
+(c) Apply an appropriate sequence of techniques.
+(d) Justify the order and selection with strong reasoning.
+(e) Present your response in a clear and structured format.
+11. Low Brightness Image
+An image captured in low light appears very dark with poor visibility.
+(a) Interpret the scenario and explain the cause of low brightness.
+(b) Identify key issues affecting image visibility.
+(c) Apply an appropriate enhancement technique.
+(d) Justify your choice with reasoning.
+(e) Present your explanation clearly.
+
+12. Overexposed Image
+An image appears excessively bright, losing important details.
+(a) Interpret the scenario and explain overexposure.
+(b) Identify key issues affecting intensity representation.
+(c) Apply a suitable correction technique.
+(d) Justify your choice logically.
+(e) Present your explanation in a structured manner.
+
+13. Gaussian Noise
+An image contains Gaussian noise affecting smooth regions.
+(a) Interpret the scenario and describe Gaussian noise.
+(b) Identify key issues affecting quality.
+(c) Apply an appropriate smoothing filter.
+(d) Justify your method over alternatives.
+(e) Present your explanation clearly.
+
+14. Speckle Noise
+An image obtained from ultrasound imaging shows speckle noise.
+(a) Interpret the scenario and explain speckle noise characteristics.
+(b) Identify key issues affecting clarity.
+(c) Apply a suitable filtering technique.
+(d) Justify your approach logically.
+(e) Present your explanation clearly.
+
+15. Loss of Fine Details
+An image loses fine details after processing.
+(a) Interpret the scenario and explain detail loss.
+(b) Identify key issues related to filtering.
+
+(c) Apply a suitable enhancement technique.
+(d) Justify your method with reasoning.
+(e) Present your explanation clearly.
+
+16. Edge Enhancement Requirement
+An application requires highlighting edges for feature extraction.
+(a) Interpret the scenario and explain the need for edge enhancement.
+(b) Identify key issues in detecting edges.
+(c) Apply an appropriate method.
+(d) Justify your choice logically.
+(e) Present your explanation clearly.
+
+17. Background Noise Removal
+An image contains background noise affecting segmentation accuracy.
+(a) Interpret the scenario and explain noise impact.
+(b) Identify key issues affecting segmentation.
+(c) Apply a suitable preprocessing method.
+(d) Justify your approach logically.
+(e) Present your explanation clearly.
+
+18. Threshold Selection Problem
+An image requires segmentation, but selecting a threshold is difficult.
+(a) Interpret the scenario and explain the challenge.
+(b) Identify key issues in threshold selection.
+(c) Apply a suitable thresholding method.
+(d) Justify your approach logically.
+(e) Present your explanation clearly.
+
+19. Texture-Based Segmentation
+An image contains regions distinguishable by texture rather than intensity.
+(a) Interpret the scenario and explain segmentation challenges.
+(b) Identify key issues with intensity-based methods.
+(c) Apply an appropriate segmentation approach.
+(d) Justify your method logically.
+(e) Present your explanation clearly.
+
+20. Multiple Object Detection
+An image contains multiple objects with similar intensity values.
+(a) Interpret the scenario and explain segmentation difficulty.
+(b) Identify key issues in distinguishing objects.
+(c) Apply a suitable segmentation technique.
+(d) Justify your choice logically.
+(e) Present your explanation clearly.
+
+21. Edge Noise Problem
+Edges detected are affected by noise.
+(a) Interpret the scenario and explain the issue.
+(b) Identify key challenges in edge detection.
+(c) Apply a suitable solution.
+(d) Justify your method logically.
+(e) Present your explanation clearly.
+
+22. Region Merging Requirement
+An image contains fragmented regions that need merging.
+(a) Interpret the scenario and explain the issue.
+(b) Identify key challenges in region segmentation.
+(c) Apply an appropriate technique.
+(d) Justify your approach logically.
+(e) Present your explanation clearly.
+
+23. Over-Segmentation
+An image is divided into too many regions after segmentation.
+(a) Interpret the scenario and explain over-segmentation.
+(b) Identify key issues affecting segmentation.
+(c) Apply a suitable correction method.
+(d) Justify your choice logically.
+(e) Present your explanation clearly.
+
+24. Under-Segmentation
+Important regions are merged incorrectly during segmentation.
+(a) Interpret the scenario and explain under-segmentation.
+(b) Identify key issues affecting separation.
+(c) Apply a suitable solution.
+(d) Justify your approach logically.
+(e) Present your explanation clearly.
+
+25. Boundary Refinement
+Detected boundaries are rough and inaccurate.
+(a) Interpret the scenario and explain the issue.
+(b) Identify key challenges in boundary detection.
+(c) Apply a suitable refinement method.
+(d) Justify your choice logically.
+(e) Present your explanation clearly.
+
+26. Frequency-Based Enhancement
+An image requires enhancement using frequency domain methods.
+(a) Interpret the scenario and explain frequency-based processing.
+
+(b) Identify key issues in spatial domain methods.
+(c) Apply an appropriate frequency domain technique.
+(d) Justify your choice logically.
+(e) Present your explanation clearly.
+
+27. Mixed Noise Scenario
+An image contains both Gaussian and impulse noise.
+(a) Interpret the scenario and explain challenges.
+(b) Identify key issues affecting filtering.
+(c) Apply a suitable combined approach.
+(d) Justify your method logically.
+(e) Present your explanation clearly.
+
+28. Edge Preservation Filtering
+A filtering method is required to remove noise but preserve edges.
+(a) Interpret the scenario and explain the requirement.
+(b) Identify key issues in filtering.
+(c) Apply a suitable technique.
+(d) Justify your approach logically.
+(e) Present your explanation clearly.
+
+29. Region Growing Failure
+Region growing fails due to incorrect seed selection.
+(a) Interpret the scenario and explain the issue.
+(b) Identify key challenges in region growing.
+(c) Apply a suitable correction.
+(d) Justify your method logically.
+(e) Present your explanation clearly.
+
+30. Industrial Inspection Enhancement
+An industrial system requires detecting defects in noisy images.
+(a) Interpret the scenario and define requirements.
+(b) Identify key issues in detection.
+(c) Apply an appropriate enhancement and segmentation pipeline.
+(d) Justify your sequence logically.
+(e) Present your explanation clearly.

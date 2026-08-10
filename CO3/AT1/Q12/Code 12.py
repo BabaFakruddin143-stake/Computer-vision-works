@@ -1,0 +1,63 @@
+from google.colab import files
+import cv2
+import numpy as np
+import matplotlib.pyplot as plt
+
+# 1. Upload image
+uploaded = files.upload()
+file_name = next(iter(uploaded))
+
+# 2. Read and convert to grayscale
+img_color = cv2.imread(file_name)
+gray = cv2.cvtColor(img_color, cv2.COLOR_BGR2GRAY)
+
+# 3. Apply Sobel Operator
+Gx = cv2.Sobel(gray, cv2.CV_64F, 1, 0, ksize=3)   # d/dx
+Gy = cv2.Sobel(gray, cv2.CV_64F, 0, 1, ksize=3)   # d/dy
+
+# 4. Gradient Magnitude and Direction
+magnitude = np.sqrt(Gx**2 + Gy**2)
+magnitude = np.uint8(np.clip(magnitude, 0, 255))
+
+direction = np.arctan2(Gy, Gx)   # in radians
+
+# 5. Edge map using threshold on magnitude
+_, edge_map = cv2.threshold(
+    magnitude, 50, 255, cv2.THRESH_BINARY
+)
+
+# 6. Display Results
+plt.figure(figsize=(14, 14))
+
+plt.subplot(2, 3, 1)
+plt.imshow(cv2.cvtColor(img_color, cv2.COLOR_BGR2RGB))
+plt.title('Original Color Image', fontweight='bold')
+plt.axis('off')
+
+plt.subplot(2, 3, 2)
+plt.imshow(gray, cmap='gray')
+plt.title('Grayscale Image', fontweight='bold')
+plt.axis('off')
+
+plt.subplot(2, 3, 3)
+plt.imshow(Gx, cmap='gray')
+plt.title('Gx (dI/dx) - Sobel', fontweight='bold')
+plt.axis('off')
+
+plt.subplot(2, 3, 4)
+plt.imshow(Gy, cmap='gray')
+plt.title('Gy (dI/dy) - Sobel', fontweight='bold')
+plt.axis('off')
+
+plt.subplot(2, 3, 5)
+plt.imshow(magnitude, cmap='gray')
+plt.title('Gradient Magnitude |∇I|', fontweight='bold')
+plt.axis('off')
+
+plt.subplot(2, 3, 6)
+plt.imshow(edge_map, cmap='gray')
+plt.title('Edge Map (Thresholded)', fontweight='bold')
+plt.axis('off')
+
+plt.tight_layout()
+plt.show()
